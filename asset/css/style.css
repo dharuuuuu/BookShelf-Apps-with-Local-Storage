@@ -1,0 +1,362 @@
+/* CSS untuk universal */
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+
+
+/* part 1 */
+header {
+  background-image: url(../images/banner/banner1.jpg);
+  background-position: center;
+  background-size: cover;
+  height:620px;
+  font-family: 'Roboto', sans-serif;
+  border-bottom: solid 4px #331906;
+}
+
+.transparant_background {
+  height:100%;
+  width:100%;
+  background-color: rgba(0,0,0,0.7);
+}
+
+.container .main_title {
+  text-align: center;
+}
+.container .main_title h1 {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #a5591f;
+  padding: 24px 24px 16px 24px;
+  font-weight: 900;
+  font-size: 65px;
+}
+.container .main_title h2{
+  font-weight: 400;
+  padding-top: 220px;
+  font-size: 28px;
+  color: rgb(199, 199, 199);
+}
+
+@media screen and (max-width: 1000px) {
+  
+
+  .container .main_title h1 {
+    font-size: 45px;
+  }
+
+  .container .main_title h2 {
+    font-size: 25px;
+  }
+}
+/* batas part 1 */
+
+
+
+/* part 2 */
+#part_2{
+  padding: 15px 0px;
+  background-color: #eee;
+  width: 100%;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.sub_title{
+  text-align: center;
+  font-size: 33px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  color: rgba(0,0,0,.9);
+  margin-top: 100px;
+}
+
+.line_small, .line_big{
+  margin: 3px auto;
+  width: 80px;
+  border-top:  2px solid #a5591f;
+}
+.line_big{
+  width: 160px;
+}
+ 
+.form-button{
+  background-color: #c26620;
+  color: white;
+  padding: 8px 14px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  border-color: transparent;
+  border-radius: 4px;
+}
+.form-button:hover{
+  background-color: #924e1a;
+}
+
+.form-container{
+  margin: 20px auto;
+  width: 65%;
+  margin-bottom: 15vh;
+}
+.form-container input{
+  margin: 7px 0.5%;
+  border-radius: 5px;
+}
+
+#part_2 .container .form-container{
+  margin-top: 50px;
+}
+#part_2 .container .form-container .add_book{
+  font-size: 15px;
+  font-weight: bold;
+  border: 2.5px solid #a5591f;
+  color: #77706a;
+  outline: none;
+}
+#part_2 .container .form-container .add_book:focus {
+  color: #a5591f;
+}
+#part_2 .container .form-container .input_inline {
+  margin: 12px 0 12px 2.2%;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  color: #a5591f;
+}
+
+#author, #year{
+width: 45.1%;
+padding: 6px;
+font-size: 18px;
+display: inline-block;
+}
+
+#title{
+  width: 93.7%;
+  padding: 6px;
+  font-size: 18px;
+}
+
+.input_inline label {
+  margin-right: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+}
+
+@media screen and (max-width: 1000px) {
+  #author, #year {
+    width: 93.7%;
+  }
+}
+/* batas part 2 */
+
+
+
+/* part 3 */
+.container_search_dan_rak {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.search {
+  width: 70%;
+  margin: 0px auto;
+  display: flex;
+  padding-top: 30px
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #a5591f;
+  padding: 5px 10px;
+  height: 27px;
+  border-radius: 5px 5px 5px;
+  outline: none;
+  color: #77706a;
+  font-size: 15px;
+  font-weight: bold;
+  margin-right: 0;
+}
+.searchTerm:focus{
+  color: #a5591f;
+}
+
+.container_search{
+  width: 100%;
+  height: 100px;
+  background-color: rgb(230, 230, 230);
+  border-radius: 15px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1000px) {
+  .search {
+    width: 85%;
+  }
+
+  .searchButton {
+    padding: 0 4px;
+  }
+}
+
+
+.rak {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Roboto', sans-serif;
+}
+.rak h2 {
+  text-align: center;
+  margin: 20px 0 10px 0;
+}
+.rak .book {
+  background-color: white;
+  margin: 15px;
+  padding: 0px 15px 15px 15px;
+  border-radius: 10px;
+  display: flex;
+}
+.rak .book h3{
+  font-weight: bolder;
+  font-size: 20px;
+  margin-bottom: 5px;
+  margin-top: 30px;
+}
+.rak .book h4,
+.rak .book p {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.container_rak_belum_selesai,
+.container_rak_sudah_selesai {
+  background-color: rgb(230, 230, 230);
+  border-radius: 15px;
+  margin-top: 10px;
+  width: 49.5%;
+}
+
+@media screen and (max-width: 1000px) {
+  .rak {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .container_rak_belum_selesai,
+  .container_rak_sudah_selesai {
+    width: 100%;
+  }
+}
+
+
+.check-button {
+  width: 40px;
+  height: 40px;
+
+  background: url('../images/icon/check-outline.png');
+  background-size: contain;
+  margin-left: auto;
+  cursor: pointer;
+  border: none;
+  background-repeat: no-repeat;
+}
+
+.trash-button {
+  width: 40px;
+  height: 40px;
+
+  background: url('../images/icon/trash-outline.png');
+  background-size: contain;
+  cursor: pointer;
+  border: none;
+  background-repeat: no-repeat;
+}
+
+.undo-button {
+  width: 40px;
+  height: 40px;
+
+  background: url('../images/icon/undo-ouline.png');
+  background-size: contain;
+  margin-left: auto;
+  cursor: pointer;
+  border: none;
+  background-repeat: no-repeat;
+}
+/* batas part 3 */
+
+
+
+/* footer */
+footer {
+  font-family: 'Roboto', sans-serif;
+  padding-top: 20px;
+  background-color: #353434;
+  color: #fff;
+  text-align: center;
+  width:100%;
+  display: block;
+  margin-top: 100px;
+}
+footer p{
+  font-size: 14px;
+  margin: 16px;
+}
+footer .center_items{
+  margin: 0vw auto;
+}
+footer span{
+  color: #889acc;
+}
+/* batas footer */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
