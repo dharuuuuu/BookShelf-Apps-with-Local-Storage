@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dharuuu</title>
+
+    <link rel="stylesheet" href="asset/css/font.css">
+    <link rel="stylesheet" href="asset/css/style.css">
+</head>
+
+<body>
+    <!-- part 1 - Judul Utama -->
+    <header>
+        <div class="transparant_background">
+            <div class="container" id="part_1">
+                <div class="main_title">
+                    <h2>Welcome To...</h2>
+                    <h1>BOOKSHELF APPS</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- batas akhir part 1 -->
+
+
+    <main>
+     <!-- part 2 - Input Buku Baru -->
+     <div id="part_2">
+        <div class="container">
+            <h3 class="sub_title">Masukkan Buku Baru</h3>
+            <div class="line_small"></div>
+            <div class="line_big"></div>
+            <div class="line_small"></div>
+
+            <div class ="form-container">
+                <form class="form" action="#" id="form">
+                    <input class="add_book" type="text" placeholder="Judul Buku" id="title" name="title" required>
+                    <input class="add_book" type="text" placeholder="Penulis" id="author" name="author" required>
+                    <input class="add_book" type="number" placeholder="Tahun" id="year" name="tahun" required>
+                    <div class="input_inline">
+                        <label for="inputBookIsComplete">Selesai Dibaca</label>
+                        <input id="inputBookIsComplete" type="checkbox" name="inputBookIsComplete">
+                    </div>
+                    <p><input type="submit" value="Masukan Buku ke Rak ..." name="Submit" class="form-button"></p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- batas akhir part 2 -->
+
+
+    <!-- part 3 - Search & Rak Buku -->
+    <div id="part_3">
+        <h2 class="sub_title">Search & Rak Buku</h2>
+        <div class="line_small"></div>
+        <div class="line_big"></div>
+        <div class="line_small"></div>
+        <br><br>
+
+        <div class="container_search_dan_rak">
+            <div class="container_search">
+                <div class="search">
+                <input type="text" class="searchTerm" placeholder="Cari judul buku disini...">
+                </div>
+            </div>
+
+            <div class="rak">
+                <div class="container_rak_belum_selesai">
+                    <h2>Belum Selesai Dibaca</h2>
+                    <div class="book">
+                        <div class="list-item" id="todos">
+                            <div class="item shadow">
+                                <div class="inner">
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+
+                <div class="container_rak_sudah_selesai">
+                    <h2>Selesai Dibaca</h2>
+                    <div class="book">
+                        <div class="list-item" id="completed-todos"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- batas akhir part 3 -->
+
+
+    <!-- footer -->
+    <footer>
+        <div class="center_items">      
+            <p>Copyright 2022 © By <span>Dimas Dharu Ramadhan</span></p>
+            <br>
+        </div>
+    </footer>
+    <!-- batas akhir footer -->
+
+    
+    <script src="asset/js/script.js"></script>
+</body>
+</html>
